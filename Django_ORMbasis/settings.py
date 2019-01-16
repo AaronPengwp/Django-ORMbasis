@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = '881r&#=(+-q!y#2#=(+(oe1b44#k5#_*e+9%is!h29r0#0t-w4'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -71,7 +69,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Django_ORMbasis.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -88,17 +85,16 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.mysql',
 
-        'NAME': 'Django_ORM',    #你的数据库名称
+        'NAME': 'Django_ORM',  # 你的数据库名称
 
-        'USER': 'root',   #你的数据库用户名
+        'USER': 'root',  # 你的数据库用户名
 
-        'PASSWORD': '123456', #你的数据库密码
+        'PASSWORD': '123456',  # 你的数据库密码
 
-        'HOST': '', #你的数据库主机，留空默认为localhost
+        'HOST': '',  # 你的数据库主机，留空默认为localhost
 
-        'PORT': '3306', #你的数据库端口
+        'PORT': '3306',  # 你的数据库端口
     }}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -118,7 +114,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -132,7 +127,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
@@ -142,16 +136,16 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'console':{
-            'level':'DEBUG',
-            'class':'logging.StreamHandler',
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
         },
     },
     'loggers': {
         'django.db.backends': {
             'handlers': ['console'],
             'propagate': True,
-            'level':'DEBUG',
+            'level': 'DEBUG',
         },
     }
 }
