@@ -13,7 +13,7 @@ def addbook(request):
     # 方式一
     # b = Book(name="python基础", price=99, author="Aaron", pub_date="2018-10-12")
     # b.save()
-
+    #
     # 方式二
     # Book.objects.create(name="Linux基础", price=199, author="Ping", pub_date="2019-1-12")
     # Book.objects.create(**dic)
@@ -42,6 +42,8 @@ def select(request):
     # book_list = Book.objects.all()
     # print(book_list)  # QuerySet 集合
     # print(book_list[0])  # Book object
+
+    # book_list = Book.objects.exclude(author="Aaron").values("name", "price")#查找不是Aaron
 
     # book_list = Book.objects.filter(id=2)
     # book_list = Book.objects.all()[:3]
